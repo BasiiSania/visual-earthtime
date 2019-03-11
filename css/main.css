@@ -285,6 +285,88 @@ nav a:hover {
     box-shadow: inset 0 2vmin .5vmin -1vmin #111;
 }
 
+.appbutton, .appbutton div {
+    border-radius: 5vmin;
+    height: 10vmin;
+    right: 5vmin;
+    bottom: 5vmin;
+    position: fixed;
+    text-align: center;
+    font-size: 4vmin;
+    line-height: 10vmin;
+}
+#linkToCode {
+    right: 15vmin;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    bottom: 10vmin;
+    background: #222;
+    color: #ddd;
+    -webkit-transition:
+        width 1s 10s,
+        height .2s 10.8s,
+        bottom .2s 10.8s;
+    transition:
+        width 1s 10s,
+        height .2s 10.8s,
+        bottom .2s 10.8s;
+}
+
+#linkToCode a {
+    display: inline-block;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transition: .2s 9.8s;
+    transition: .2s 9.8s;
+}
+#linkToCode a span {
+    background-image: url('../img/github-logo.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgba(0,0,0,0);
+}
+
+#linkToGithub {
+    width: 10vmin;
+    font-size: 1px;
+    color: rgba(0,0,0,0);
+    background: rgba(100,100,100,10);
+    background-image: url('../img/spiral.svg');
+    background-size: 140%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: 2s 10.8s;
+    transition: 2s 10.8s;
+}
+.appbutton:hover #linkToGithub {
+    -webkit-transform: rotate(-1080deg);
+    transform: rotate(-1080deg);
+    background-size: 600%;
+    -webkit-transition: 2s 0s;
+    transition: 2s 0s;
+}
+.appbutton:hover #linkToCode {
+    width: 40vmin;
+    height: 10vmin;
+    bottom: 5vmin;
+    -webkit-transition:
+        width 1.1s 2.2s,
+        height .4s 2.2s,
+        bottom .4s 2.2s;
+    transition:
+        width 1.1s 2.2s,
+        height .4s 2.2s,
+        bottom .4s 2.2s;
+}
+.appbutton:hover #linkToCode a {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition: .2s 3.6s;
+    transition: .2s 3.6s;
+}
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */

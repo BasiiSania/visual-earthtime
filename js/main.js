@@ -36,3 +36,14 @@ function main_CurrentHidding(){
 
 main_CurrentHidding();
 setInterval(main_CurrentHidding, 4*60*1000); // for 1/360 of a circle
+
+var hoverTimeout;
+$('.appbutton').hover(function() {
+    clearTimeout(hoverTimeout);
+    $(this).addClass('hovered');
+}, function() {
+    var $self = $(this);
+    hoverTimeout = setTimeout(function() {
+        $self.removeClass('hovered');
+    }, 6000);
+});

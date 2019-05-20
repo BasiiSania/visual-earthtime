@@ -173,9 +173,9 @@ nav a:hover {
     
     border-radius: 50%;
     border: 0.3vmin #7b7b7b solid;
-    -webkit-box-shadow: 0 0 12vmin #777,
+    -webkit-box-shadow: 0 0 6vmin #777,
         inset 0 0 0.5vmin #fff;
-    box-shadow: 0 0 12vmin #777,
+    box-shadow: 0 0 6vmin #777,
         inset 0 0 0.5vmin #fff;
 /*    background-color: grey;*/
     background-image: url('../img/north.jpg');
